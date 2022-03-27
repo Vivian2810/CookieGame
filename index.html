@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cookie Game</title><!-- A changer à chaque Projet --> 
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="cookie.png">
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Game</title><!-- A changer à chaque Projet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="cookie.png">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="titre">
+            Jeu de cookie
+        </h1>
+    </header>
+
+    <div class="page">
+
         
-        <header>
-            <h1 id="titre">
-                Jeu de cookie 
-            </h1>
-        </header>
-
-        <div class="affButt">
-            <div id="btn-red"></div>
-            <div class="cercle">
-                <img id="cookie" src="photo_moi.png" alt=" cookie" height="100px">
+        <div class="game">
+            <div class="affButt">
+                <div class="affButt__rouge" id="btn-red">
+                    <h4>Reset</h4>
+                </div>
+                <div class="affButt_cookie">
+                    <img id="cookie" src="cookie.png" alt=" cookie" height="100px">
+                </div>
+                <div class="affButt__vert" id="btn-green">
+                    <h4>Multiplicateur = </h4>
+                    <div class="affButt__vert__mult" id="multip"> 1</div>
+                </div>
             </div>
-            <div id="btn-green">
-                <h4>Multiplicateur = </h4>
-                <div id="multip"> 1</div>
+
+            <div class="compteur">
+                <h3>Score = </h3>
+                <div class="compteur__score" id="score">
+                    Score
+                </div>
+            </div>
+
+            <div class="publish">
+                <h3>Nom : </h3>
+                <input class="publish__nom" type="text">
+                <input class="publish__butt" type="button" value="Envoi Score">
             </div>
         </div>
 
-        <div class= "compteur">
-            <h3>Score = </h3>
-            <div id="score">
-                Score
-            </div>
-        </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div class="tableau">
+
+        </div>
+    </div>
+    <footer>
+        <div>
+            Réalisé par Vivian Michel© | <a class="lien_site" href="https://vivian2810.github.io/Portfolio/">Mon
+                site</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
